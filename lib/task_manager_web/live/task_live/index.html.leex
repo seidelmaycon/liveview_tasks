@@ -4,8 +4,9 @@
 </form>
 
 <%= for task <- @tasks do %>
-  <div>
+  <div class="task">
     <%= checkbox :task, :done, value: task.done, phx_click: "toggle", phx_value_id: task.id %>
     <%= task.name %>
+    <span class="task-delete" phx-click="delete", phx-value-id= <%= task.id %> %> delete </span>
   </div>
 <% end %>

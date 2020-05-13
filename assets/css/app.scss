@@ -89,3 +89,12 @@
 .alert:empty {
   display: none;
 }
+
+.task-delete {
+  display:none;
+}
+
+div.task:hover .task-delete{
+  margin-left: 12px;
+  display: inline;
+}
